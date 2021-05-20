@@ -6,7 +6,8 @@
         "about": "About me",
         "projects": "Projects",
         "skills": "Skills",
-        "experience": "Experience"
+        "experience": "Experience",
+        "education":"Education"
       }
     },
     "projects": [
@@ -79,6 +80,32 @@
         ]
       }
     ],
+    "education":
+      [
+        {
+          "stream": "Electronics and Communication Engineering",
+          "additional":"",
+          "institute": "Vellore Institute of Technology, Vellore",
+          "years": "07/2018 - present",
+          "cgpa":"8.65",
+          "percentage":"",
+          "degree": [
+            "Bachelor's Degree"
+          ]
+        },
+        {
+          "stream": "PCM",
+          "additional":"Higher Secondary School Certificate Examination (HSSC)",
+          "institute": "DPS mandsaur M.P.",
+          "years": "2016 - 2018",
+          "cgpa":"",
+          "percentage":"81.4%",
+          "degree": [
+            "M.P BOARD"
+          ]
+        }
+      ]
+    ,
     "experience": [
       {
         "company": "DefOpenSource",

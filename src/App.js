@@ -6,6 +6,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Education from "./components/Education"
 import Grid from "@material-ui/core/Grid";
 import Drawer from '@material-ui/core/Drawer';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -81,15 +82,15 @@ if(loading){
                       <div style={{position: "fixed",width: "270px"}}>
                       
                       <div class="p-4">
-                        <h1 style={{paddingTop: "10px"}}><a href="index.html" class="logo" style={{paddingTop: "30px"}} >Samriddhi Srivastava <span>Final Year B.Tech IT
+                        <h1 style={{paddingTop: "10px"}}><a href="index.html" class="logo" style={{paddingTop: "30px"}} >Apnik Jain <br/><span>Pre-Final Year B.Tech ECE
                               Student</span></a></h1>
                         <div class="">
                           <ul class="list-unstyled components mb-5">
-                            <li class="active">
+                            <li>
                               <p onClick = {() => scrollHandler('about')}><span class="fa fa-home mr-3"></span> About Me</p>
                             </li>
                             <li>
-                              <a href="#education"><span class="fa fa-book mr-3"></span> Education</a>
+                            <p onClick = {() => scrollHandler('education')}><span class="fa fa-book mr-3"></span> Education</p>
                             </li>
                             <li>
                               <a href="#experience"><span class="fa fa-laptop mr-3"></span> Experience</a>
@@ -142,11 +143,12 @@ if(loading){
                       resumeBasicInfo={resumeData.basic_info}
                       sharedBasicInfo={sharedData.basic_info}
                     />
-                    <Projects
-                      id = "2"
-                      resumeProjects={resumeData.projects}
+                    <Education
+                      
+                      resumeEducation={resumeData.education}
                       resumeBasicInfo={resumeData.basic_info}
                     />
+                    
                     <Skills
                       id = "3"
                       sharedSkills={sharedData.skills}
@@ -155,6 +157,11 @@ if(loading){
                     <Experience
                       id = "4"
                       resumeExperience={resumeData.experience}
+                      resumeBasicInfo={resumeData.basic_info}
+                    />
+                    <Projects
+                      id = "2"
+                      resumeProjects={resumeData.projects}
                       resumeBasicInfo={resumeData.basic_info}
                     />
                     <Footer sharedBasicInfo={sharedData.basic_info} />
