@@ -33,14 +33,37 @@ body[data-theme="dark"] {
    }
 
    header {
-      background-color: #494949;
+      background-color: #222a33;
       h1 {
          color: white;
       }
    }
 
+   #education{
+      background-color: #222a33;
+   }
+
+   .section-title{
+      color: white !important; 
+   }
+
+   #certificates{
+      background-color: #222a33;
+   }
+
+   .contact-text{
+      color: white !important;
+   }
+   #contact{
+      background-color: #222a33;
+   }
+
+   #experience{
+      background-color: #222a33;
+   }
+
    #about {
-      background-color: #7f7f7f;
+      background-color: #313c4e;
       h1 span {
          color: white;
       }
@@ -103,5 +126,10 @@ body[data-theme="dark"] {
 
    .close-icon {
       color: white;
+   }
+
+   .menu-icon{
+      color: white !important;
+      
    }
 }
