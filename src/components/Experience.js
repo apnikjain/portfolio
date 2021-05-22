@@ -31,31 +31,37 @@ class Experience extends Component {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={work.years}
+            date={work.duration}
             iconStyle={{
-              background: "#AE944F",
+              background: "#313c4e",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={<i className="fab fa-font-awesome experience-icon"></i>}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
             </div>
-
             <h3
+            className="vertical-timeline-element-subtitle"
+            style={{ textAlign: "left" }}
+          >
+            {work.company}
+          </h3>
+            <h4
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
               {work.title}
-            </h3>
-            <h4
+            </h4>
+            <br/>
+            <h5
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.company}
-            </h4>
+              {work.description}
+            </h5>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
@@ -63,7 +69,7 @@ class Experience extends Component {
     }
 
     return (
-      <section id="resume" className="pb-5">
+      <section id="experience" className="pb-5">
         <div className="col-md-12 mx-auto">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
@@ -78,7 +84,7 @@ class Experience extends Component {
             {work}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#AE944F",
+                background: "#313c4e",
                 color: "#fff",
                 textAlign: "center",
               }}

@@ -1,70 +1,94 @@
-import React, { Component } from "react";
-import ProjectDetailsModal from "./ProjectDetailsModal";
+import React from "react";
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from "@material-ui/core/Grid";
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import Badge from "react-bootstrap/Badge";
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      deps: {},
-      detailsModalShow: false,
-    };
+const useStyles = makeStyles({
+  card: {
+    minHeight: "10rem",
+    width:"100rem",
+    cursor:"default"
+  },
+  root:{
+    maxWidth:"55rem",
+    paddingTop:"2rem",
+    backgroundColor:"white !important"
   }
+});
 
-  render() {
-    let detailsModalShow = (data) => {
-      this.setState({ detailsModalShow: true, deps: data });
-    };
-
-    let detailsModalClose = () => this.setState({ detailsModalShow: false });
-    if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (projects) {
+const Projects = ({resumeProjects, resumeBasicInfo}) => {
+    const classes = useStyles();
+    if (resumeProjects && resumeBasicInfo) {
+      var sectionName = resumeBasicInfo.section_name.projects;
+      var projects = resumeProjects.map((projects) =>{
         return (
-          <div
-            className="col-sm-12 col-md-6 col-lg-4"
-            key={projects.title}
-            style={{ cursor: "pointer" }}
-          >
-            <span className="portfolio-item d-block">
-              <div className="foto" onClick={() => detailsModalShow(projects)}>
-                <div>
-                  <img
-                    src={projects.images[0]}
-                    alt="projectImages"
-                    height="230"
-                    style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-                  />
-                  <span className="project-date">{projects.startDate}</span>
-                  <br />
-                  <p className="project-title-settings mt-3">
-                    {projects.title}
-                  </p>
-                </div>
-              </div>
-            </span>
-          </div>
-        );
+          <Grid md = {12} spacing = {3} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
+              <Card className = {classes.root}>
+                <CardActionArea >
+                  
+                  <CardContent className = {classes.card}>
+                      <Typography gutterBottom variant="h4" component="h2">
+                        {projects.title}
+                      </Typography>
+                      <h4>
+                        {projects.description}
+                      </h4>
+                      <br/>
+                      {
+                        projects.technologies.map((technology, i) => {
+                          return (
+                            <Badge  className="main-badge mr-2 mb-2" key={i} style = {{maxWidth:"22rem"}}>
+                              {technology.name}
+                            </Badge>
+                          );
+                        })
+                      }
+                      
+                  </CardContent>
+                </CardActionArea>
+                <CardActions style = {{marginLeft:"0.7rem"}}>
+                  {
+                    projects.url === "" ? null:<a href = {projects.url} style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
+                                                  View Project
+                                                </Button></a>
+                  }
+                  {
+                    projects.gitUrl === "" ? null:<a href = {projects.gitUrl} style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
+                                                    View Code
+                                                  </Button></a>
+                  }
+                  
+                </CardActions>
+            </Card>
+          </Grid>
+        )
       });
     }
 
     return (
-      <section id="portfolio">
-        <div className="col-md-12">
-          <h1 className="section-title" style={{ color: "black" }}>
+      <section id="projects">
+        <div>
+          <h1 className="section-title" style={{ color: "white" }}>
             <span>{sectionName}</span>
           </h1>
-          <div className="col-md-12 mx-auto">
-            <div className="row mx-auto">{projects}</div>
-          </div>
-          <ProjectDetailsModal
-            show={this.state.detailsModalShow}
-            onHide={detailsModalClose}
-            data={this.state.deps}
-          />
+          <Grid container direction="row"
+          justify="center"
+          alignItems="center">
+                 
+               {projects}
+                
+                 
+            </Grid>
         </div>
       </section>
     );
-  }
+  
 }
 
 export default Projects;

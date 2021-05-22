@@ -38,7 +38,7 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	background-color: #313c4e;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -222,8 +222,12 @@ header h1 {
 	background: #efe1bd;
 }
 
+#experience {
+	background: #dee2e6;
+}
+
 #education {
-	background: #efe1bd;
+	background: #dee2e6;
 }
 
 .experience-icon {
@@ -237,7 +241,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #AE944F !important;
+	background-color: #313c4e !important;
 	color: white;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -344,44 +348,31 @@ header h1 {
 	color: black !important;
 }
 
-#portfolio {
-	background: #efe1bd;
+#projects {
+	background: #313c4e;
 	padding-bottom: 5%;
 }
 
-.portfolio-item {
-	max-width: 100%;
-	margin-bottom: 15px;
-	text-align: center;
+#certificates{
+	background: #dee2e6;
+	padding-bottom: 5%;
 }
 
-.portfolio .portfolio-item .portfolio-item-caption {
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
-	opacity: 0;
-	background-color: rgba(51, 51, 51, 0.9);
-}
-
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-	opacity: 1;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-	font-size: 1.5rem;
-}
-
-@media (min-width: 576px) {
-	.portfolio .closeButtonResponsive {
-		display: block;
-	}
-	.portfolio .portfolio-item {
-		margin-bottom: 30px;
-	}
+#contact{
+	background: #dee2e6;
+	padding-bottom: 5%;
 }
 
 #skills {
-	background: #1F1F1F;
+	background: #313c4e;
+	min-height: 200px;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10%;
+}
+
+#codingprofiles{
+	background: #313c4e;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -466,7 +457,25 @@ footer a:focus {
 	
 }
 
-.icon{
-    width: 49px !important;
-    height: 24px !important;
+
+
+
+.MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #1F1F1F !important;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+	align-self:center;
+    color: white;
+	margin-left: 21rem;
+    width:  auto !important;
+    height: 4rem !important;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
 }
