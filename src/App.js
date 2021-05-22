@@ -188,7 +188,7 @@ if(loading){
                   <div>
                   <div class="github-corner" style = {{position:"fixed", zIndex:"10"}}>
                     {
-                      open?null:<MenuIcon style = {{color:"white"}}  className = "icon" onClick={() => toggleDrawer()}>Open</MenuIcon>
+                      open?null:<MenuIcon className = "menu-icon" style = {{color:"black",margin: "1rem 1.5rem"}}  onClick={() => toggleDrawer()}>Open</MenuIcon>
                     }
                     
                   </div>

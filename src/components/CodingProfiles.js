@@ -47,7 +47,7 @@ const CodingProfiles = ({sharedProfiles, resumeBasicInfo}) => {
         
         
         return (
-          <Grid md = {4} spacing = {1} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
+          <Grid md = {4} sm = {6} xs = {12} spacing = {1} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
               <div className = {classes.imgDiv}>
                 <a href = {profiles.url} target = "_blank" style = {{alignSelf:"center"}}>
                 { 
