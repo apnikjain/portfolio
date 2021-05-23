@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/apnikjain-portfolio/static/css/main.29a8aa67.chunk.css",
+    "main.js": "/apnikjain-portfolio/static/js/main.cccec54a.chunk.js",
+    "main.js.map": "/apnikjain-portfolio/static/js/main.cccec54a.chunk.js.map",
+    "runtime-main.js": "/apnikjain-portfolio/static/js/runtime-main.7c2c1447.js",
+    "runtime-main.js.map": "/apnikjain-portfolio/static/js/runtime-main.7c2c1447.js.map",
+    "static/css/2.e7de8650.chunk.css": "/apnikjain-portfolio/static/css/2.e7de8650.chunk.css",
+    "static/js/2.22579718.chunk.js": "/apnikjain-portfolio/static/js/2.22579718.chunk.js",
+    "static/js/2.22579718.chunk.js.map": "/apnikjain-portfolio/static/js/2.22579718.chunk.js.map",
+    "index.html": "/apnikjain-portfolio/index.html",
+    "precache-manifest.e2591406e8ea43ed5cce854a0ac77159.js": "/apnikjain-portfolio/precache-manifest.e2591406e8ea43ed5cce854a0ac77159.js",
+    "service-worker.js": "/apnikjain-portfolio/service-worker.js",
+    "static/css/2.e7de8650.chunk.css.map": "/apnikjain-portfolio/static/css/2.e7de8650.chunk.css.map",
+    "static/css/main.29a8aa67.chunk.css.map": "/apnikjain-portfolio/static/css/main.29a8aa67.chunk.css.map",
+    "static/js/2.22579718.chunk.js.LICENSE.txt": "/apnikjain-portfolio/static/js/2.22579718.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c2c1447.js",
+    "static/css/2.e7de8650.chunk.css",
+    "static/js/2.22579718.chunk.js",
+    "static/css/main.29a8aa67.chunk.css",
+    "static/js/main.cccec54a.chunk.js"
+  ]
+}

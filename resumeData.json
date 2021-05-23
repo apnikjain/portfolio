@@ -1,0 +1,158 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "I'm Apnik Jain......",
+      "section_name": {
+        "about": "About me",
+        "projects": "KEY PROJECTS EXPERIENCE",
+        "skills": "Technical Skills",
+        "experience": "Experience",
+        "education":"Education",
+        "certificates":"Certificates",
+        "codingprofiles":"Coding Profiles",
+        "contact":"Contact"
+      }
+    },
+    "projects": [
+      {
+        "title": "CodeZap",
+        "description": "CodeZap is a website developed for conducting multiple coding competition.",
+        "url": "https://wizardly-morse-97e522.netlify.app/",
+        "gitUrl":"",
+        "technologies": [
+          {
+            "name": "React JS"
+          },
+          {
+            "name": "Firebase"
+          },
+          {
+            "name": "Judge0 API"
+          }
+        ]
+      },
+      {
+        "title": "HackaMotiVE | Prof. S. Sankar Ganesh | VIT, Vellore",
+        "description": "HackaMotiVE is hackathon website conducted by Elektrobit (EB) and VIT Vellore, the website gives us an easy way to manage applications, view registration stats, and more.",
+        "url": "https://vit.ac.in/hackamotiVE/",
+        "gitUrl":"",
+        "technologies": [
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "Firebase"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ]
+      }
+      
+
+    ],
+    "education":
+      [
+        {
+          "stream": "Electronics and Communication Engineering",
+          "additional":"",
+          "institute": "Vellore Institute of Technology, Vellore",
+          "years": "07/2018 - present",
+          "cgpa":"8.65",
+          "percentage":"",
+          "degree": [
+            "Bachelor's Degree"
+          ]
+        },
+        {
+          "stream": "PCM",
+          "additional":"Higher Secondary School Certificate Examination (HSSC)",
+          "institute": "DPS mandsaur M.P.",
+          "years": "2016 - 2018",
+          "cgpa":"",
+          "percentage":"81.4%",
+          "degree": [
+            "M.P BOARD"
+          ]
+        }
+      ]
+    ,
+    "experience": [
+      {
+        "company": "CodePark",
+        "title": "Software Developer Intern",
+        "duration": "02/2021 - 04/2021",
+        "description":"Worked on help center website where users can find answers to their questions and solutions to their problems related to CodePark.",
+        "mainTech": [],
+        "technologies": [
+          "REST API",
+          "React JS",
+          "JavaScript",
+          "Node js",
+          "Mongo DB",
+          "Swagger UI",
+          "Express JS"
+        ]
+      },
+      {
+        "company": "CareerNaksha",
+        "title": "Android App Developer Intern",
+        "duration": "01.2018 - 09.2019",
+        "description":"Worked on android app using React Native where users can schedule counselling sessions with any available counsellor and authentication.",
+        "mainTech": [],
+        "technologies": [
+          "React Native",
+          "Firebase",
+          "JavaScript"
+        ]
+      },
+      {
+        "company": "ISTE-VIT Student Chapter",
+        "title": "Projects Lead",
+        "description":"Contributed as a web developer and project lead.",
+        "duration": "01.2018 - 09.2019",
+        "mainTech": [],
+        "technologies": []
+      }
+    ],
+    "certificates":[
+      {
+        "title":"React - The Complete Guide by Udemy",
+        "url":"https://udemy-certificate.s3.amazonaws.com/image/UC-86553eff-f885-435c-9fea-173e70a39845.jpg",
+        "src":"https://udemy-certificate.s3.amazonaws.com/image/UC-86553eff-f885-435c-9fea-173e70a39845.jpg"
+      },
+      {
+        "title":"Java Tutorial for Complete Beginners By Udemy",
+        "url":"https://www.udemy.com/certificate/UC-f8f121fc-4cea-48ec-bb31-058a9a824fae/",
+        "src":"https://udemy-certificate.s3.amazonaws.com/image/UC-f8f121fc-4cea-48ec-bb31-058a9a824fae.jpg"
+      },
+      {
+        "title":"Problem Solving (Intermediate) By Hackerrank",
+        "url":"https://www.hackerrank.com/certificates/39b1ea238245",
+        "src":"images/certificates/hackerrankI.png"
+      }
+    ],
+    "codingprofiles":[
+      {
+        "title":"Leetcode: ",
+        "description":"1530 Rating (max)",
+        "url":"https://leetcode.com/apnikjain/",
+        "icon":"leetcode"
+      },
+      {
+        "title":"GeeksForGeeks",
+        "description":"",
+        "url":"https://auth.geeksforgeeks.org/user/apnikjain/practice/",
+        "icon":"gfg"
+      },
+      {
+        "title":"Hackerrank",
+        "description":"",
+        "url":"https://www.hackerrank.com/Apnikmkjain",
+        "icon":"hr"
+      }
+    ]
+  }

@@ -1,0 +1,101 @@
+{
+    "basic_info": {
+      "name": "Apnik Jain",
+      "titles": "Pre-Final Year B.Tech ECE Student",
+      "institute":"VIT Vellore",
+      "email":"apnikmkjain@gmail.com",
+      "location":"Mandsaur, Madhya Pradesh, India",
+      "Date of Birth":"17/01/2001",
+      "resume":"https://drive.google.com/file/d/1LrcqT5phocHMZhlWgZIt2LbHn8IK9Bid/view?usp=sharing",
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/apnikjain",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "Linkedin",
+          "url": "https://www.linkedin.com/in/apnik-jain/",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "60"
+        },
+        {
+          "name": "HTML5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "80"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "95"
+        },
+        {
+          "name": "React Native",
+          "class": "devicon-react-plain",
+          "level": "95"
+        },
+        {
+          "name": "Mongo DB",
+          "class": "devicon-mongodb-plain",
+          "level": "95"
+        },
+        {
+          "name": "Node js",
+          "class": "devicon-nodejs-plain",
+          "level": "95"
+        },
+        {
+          "name": "Express JS",
+          "class": "devicon-express-original",
+          "level": "95"
+        },
+        {
+          "name":"Firebase",
+          "class":"devicon-firebase-plain",
+          "level":"95"
+        },
+        {
+          "name":"Git",
+          "class":"devicon-git-plain",
+          "level":"95"
+        }
+        
+
+        
+      ]
+    }
+  }
