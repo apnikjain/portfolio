@@ -29,10 +29,10 @@ const Certificates = ({resumeCertificates, resumeBasicInfo}) => {
       var sectionName = resumeBasicInfo.section_name.certificates;
       var certificates = resumeCertificates.map((certificates) =>{
         return (
-          <Grid md = {4} spacing = {1} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
+          <Grid item key = {certificates.title} style = {{marginTop:"2rem", marginRight:"1.5rem", display:"flex", justifyContent:"center"}}>
               <div className = {classes.imgDiv}>
                 <h3 style ={{alignSelf:"center"}}>{certificates.title}</h3>
-                <a href = {certificates.url} target = "_blank"><img src ={certificates.src}  className = {classes.image}/></a>
+                <a href = {certificates.url} rel="noopener noreferrer" target = "_blank"><img src ={certificates.src} alt = "" className = {classes.image}/></a>
               </div>
 
             

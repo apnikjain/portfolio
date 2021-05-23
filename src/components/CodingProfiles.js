@@ -41,15 +41,15 @@ const CodingProfiles = ({sharedProfiles, resumeBasicInfo}) => {
     if (sharedProfiles && resumeBasicInfo) {
       
       var sectionName = resumeBasicInfo.section_name.codingprofiles;
-      var Profiles = sharedProfiles.map(function (profiles, i) {
+      var Profiles = sharedProfiles.map(function (profiles) {
         
         
         
         
         return (
-          <Grid md = {4} sm = {6} xs = {12} spacing = {1} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
+          <Grid item key = {profiles.title} md = {4} sm = {6} xs = {12} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
               <div className = {classes.imgDiv}>
-                <a href = {profiles.url} target = "_blank" style = {{alignSelf:"center"}}>
+                <a href = {profiles.url} target = "_blank" rel="noopener noreferrer" style = {{alignSelf:"center"}}>
                 { 
                   profiles.icon === "leetcode" ? <Icon icon={leetcodeIcon} className = {classes.image}/> : 
                     profiles.icon === "gfg" ? <Icon icon={geeksforgeeksIcon} className = {classes.image}/> :
@@ -76,7 +76,7 @@ const CodingProfiles = ({sharedProfiles, resumeBasicInfo}) => {
               <span className="text-white">{sectionName}</span>
             </h1>
           </div>
-          <Grid container direction="row"
+          <Grid container direction="row" spacing = {1}
           justify="center"
           alignItems="center">
                  

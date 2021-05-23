@@ -42,7 +42,7 @@ const App = () =>{
 
   const toggleDrawer = () =>{
     if(open){
-      setSize1(0);
+      setSize1("auto");
       setSize2(12);
       
     }
@@ -98,83 +98,83 @@ if(loading){
                       
                       <div style={{position: "fixed",width: "270px"}}>
                       
-                      <div class="p-4" style = {{    color: "white",
+                      <div className="p-4" style = {{    color: "white",
                         padding: "2.5rem!important",
                         fontSize: "19px"}}>
-                        <h1 style={{paddingTop: "10px"}}><a href="index.html" class="logo" style={{paddingTop: "30px", color:"white"}} >Apnik Jain <br/><br/><span><h2>Pre-Final Year B.Tech ECE
+                        <h1 style={{paddingTop: "10px"}}><a href="index.html" style={{paddingTop: "30px", color:"white"}} >Apnik Jain <br/><br/><span><h2>Pre-Final Year B.Tech ECE
                         Student</h2></span></a></h1>
                         <div style = {{paddingTop: "5rem"}}>
-                          <ul class="list-unstyled components mb-5">
+                          <ul className="list-unstyled components mb-5">
                             <li>
-                              <p onClick = {() => scrollHandler('about')}><span class="fa fa-home mr-3"></span> About Me</p>
+                              <p onClick = {() => scrollHandler('about')}><span className="fa fa-home mr-3"></span> About Me</p>
                             </li>
                             <li>
-                            <p onClick = {() => scrollHandler('education')}><span class="fa fa-book mr-3"></span> Education</p>
+                            <p onClick = {() => scrollHandler('education')}><span className="fa fa-book mr-3"></span> Education</p>
                             </li>
                             <li>
-                              <p onClick = {() => scrollHandler('skills')}><span class="fa fa-cogs mr-3"></span> Skills</p>
+                              <p onClick = {() => scrollHandler('skills')}><span className="fa fa-cogs mr-3"></span> Skills</p>
                             </li>
                             <li>
-                              <p onClick = {() => scrollHandler('experience')}><span class="fa fa-book mr-3"></span> Experience</p>
+                              <p onClick = {() => scrollHandler('experience')}><span className="fa fa-book mr-3"></span> Experience</p>
                             </li>
                             <li>
-                              <p onClick = {() => scrollHandler('projects')}><span class="fa fa-briefcase mr-3"></span> Projects</p>
+                              <p onClick = {() => scrollHandler('projects')}><span className="fa fa-briefcase mr-3"></span> Projects</p>
                               
                             </li>
                             
                             <li>
-                              <p onClick = {() => scrollHandler('certificates')}><span class="fa fa-certificate mr-3"></span> Certificates</p>
+                              <p onClick = {() => scrollHandler('certificates')}><span className="fa fa-certificate mr-3"></span> Certificates</p>
                             </li>
                             <li>
-                              <p onClick = {() => scrollHandler('codingprofiles')}><span class="fa fa-code mr-3"></span> Coding Profiles</p>
+                              <p onClick = {() => scrollHandler('codingprofiles')}><span className="fa fa-code mr-3"></span> Coding Profiles</p>
                               
                             </li>
                             <li>  
-                              <p onClick = {() => scrollHandler('contact')}><span class="fa fa-paper-plane mr-3"></span> Contact</p>
+                              <p onClick = {() => scrollHandler('contact')}><span className="fa fa-paper-plane mr-3"></span> Contact</p>
                               
                             </li>
                           </ul>
               
                           <Switch
-                checked={checked}
-                onChange={onThemeSwitchChange}
-                offColor="#baaa80"
-                onColor="#353535"
-                className="react-switch mx-auto"
-                width={90}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:owl"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "20px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              />
+                            checked={checked}
+                            onChange={onThemeSwitchChange}
+                            offColor="#353535"
+                            onColor="#353535"
+                            className="react-switch mx-auto"
+                            width={90}
+                            height={40}
+                            uncheckedIcon={
+                              <span
+                                className="iconify"
+                                data-icon="emojione:crescent-moon"
+                                data-inline="false"
+                                style={{
+                                  display: "block",
+                                  height: "100%",
+                                  fontSize: 25,
+                                  textAlign: "end",
+                                  marginLeft: "20px",
+                                  color: "#353239",
+                                }}
+                              ></span>
+                            }
+                            checkedIcon={
+                              <span
+                                className="iconify"
+                                data-icon="emojione:sun"
+                                data-inline="false"
+                                style={{
+                                  display: "block",
+                                  height: "100%",
+                                  fontSize: 25,
+                                  textAlign: "end",
+                                  marginLeft: "10px",
+                                  color: "#353239",
+                                }}
+                              ></span>
+                            }
+                            id="icon-switch"
+                          />
                         </div>
                       </div>
                     </div>
@@ -186,7 +186,7 @@ if(loading){
                 
                 <Grid item md={size2} sm = {size2} xm = {size2} xl = {size2} >
                   <div>
-                  <div class="github-corner" style = {{position:"fixed", zIndex:"10"}}>
+                  <div className="github-corner" style = {{position:"fixed", zIndex:"10"}}>
                     {
                       open?null:<MenuIcon className = "menu-icon" style = {{color:"black",margin: "1rem 1.5rem"}}  onClick={() => toggleDrawer()}>Open</MenuIcon>
                     }
