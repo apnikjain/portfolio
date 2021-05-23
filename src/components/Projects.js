@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -12,7 +11,6 @@ import Badge from "react-bootstrap/Badge";
 const useStyles = makeStyles({
   card: {
     minHeight: "10rem",
-    width:"100rem",
     cursor:"default"
   },
   root:{
@@ -28,10 +26,9 @@ const Projects = ({resumeProjects, resumeBasicInfo}) => {
       var sectionName = resumeBasicInfo.section_name.projects;
       var projects = resumeProjects.map((projects) =>{
         return (
-          <Grid md = {12} spacing = {3} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
+          <Grid item md = {12} key = {projects.title} style = {{marginTop:"2rem", display:"flex", justifyContent:"center"}}>
               <Card className = {classes.root}>
-                <CardActionArea >
-                  
+                 
                   <CardContent className = {classes.card}>
                       <Typography gutterBottom variant="h4" component="h2">
                         {projects.title}
@@ -51,15 +48,15 @@ const Projects = ({resumeProjects, resumeBasicInfo}) => {
                       }
                       
                   </CardContent>
-                </CardActionArea>
+                
                 <CardActions style = {{marginLeft:"0.7rem"}}>
                   {
-                    projects.url === "" ? null:<a href = {projects.url} style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
+                    projects.url === "" ? null:<a href = {projects.url} target = "_blank" rel="noopener noreferrer" style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
                                                   View Project
                                                 </Button></a>
                   }
                   {
-                    projects.gitUrl === "" ? null:<a href = {projects.gitUrl} style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
+                    projects.gitUrl === "" ? null:<a href = {projects.gitUrl} target = "_blank" rel="noopener noreferrer" style = {{ color: "white", textDecoration:"none"}}><Button size="large" variant="text" style = {{backgroundColor : "#1F1F1F", color: "white", textDecoration:"none"}}>
                                                     View Code
                                                   </Button></a>
                   }

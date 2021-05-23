@@ -1,30 +1,9 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from "@material-ui/core/Grid";
 
 
-const useStyles = makeStyles({
-  card: {
-    minHeight: "10rem",
-    width:"100rem"
-  },
-  root:{
-    maxWidth:"55rem",
-    paddingTop:"2rem",
-  },
-  image:{
-      width:"40rem",
-      height:"auto"
-  },
-  imgDiv : {
-      display:"flex",
-      justifyContent:"center",
-      flexDirection:"column"
-  }
-});
 
 const Contact = ({resumeContact, resumeBasicInfo}) => {
-    const classes = useStyles();
+    
     if (resumeContact && resumeBasicInfo) {
       var sectionName = resumeBasicInfo.section_name.contact;
       
@@ -58,7 +37,7 @@ const Contact = ({resumeContact, resumeBasicInfo}) => {
               </div>
               <br/>
               <div className="title-container">
-                <h2>Resume: </h2><a href = {resumeContact.resume} target="_blank"><i class="fa fa-download fa-2x text-grey424242" aria-hidden="true"></i></a>
+              <a href = {resumeContact.resume} target="_blank" rel="noopener noreferrer" style = {{color:"black", textDecoration:"none"}}><h2 >Resume: </h2><i className="fa fa-download fa-2x text-grey424242" aria-hidden="true"></i></a>
               </div>
               
               
