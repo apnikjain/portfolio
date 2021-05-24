@@ -20,9 +20,9 @@ import Switch from "react-switch";
 const App = () =>{
   const [resumeData , setResumeData] = useState({});
   const [sharedData , setSharedData] = useState({});
-  const [open, setOpen] = useState(true);
-  const [size1, setSize1] = useState(2);
-  const [size2, setSize2] = useState(10);
+  const [open, setOpen] = useState(false);
+  const [size1, setSize1] = useState("auto");
+  const [size2, setSize2] = useState(12);
   const [loading, setLoading] = useState(true);
   const [checked, setChecked] = useState(false);
   
@@ -64,7 +64,9 @@ const App = () =>{
     setLoading(true);
 
     const response1 = await fetch('portfolio_shared_data.json');
+    
     const resData1 = await response1.json();
+    
     setSharedData(resData1);
     document.title = `${resData1.basic_info.name}`;
     
@@ -101,35 +103,35 @@ if(loading){
                       <div className="p-4" style = {{    color: "white",
                         padding: "2.5rem!important",
                         fontSize: "19px"}}>
-                        <h1 style={{paddingTop: "10px"}}><a href="index.html" style={{paddingTop: "30px", color:"white"}} >Apnik Jain <br/><br/><span><h2>Pre-Final Year B.Tech ECE
-                        Student</h2></span></a></h1>
+                        <h1 style={{paddingTop: "10px", color:"white"}}>Apnik Jain <br/><br/><span><h2>Pre-Final Year B.Tech ECE
+                        Student</h2></span></h1>
                         <div style = {{paddingTop: "5rem"}}>
                           <ul className="list-unstyled components mb-5">
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('about')}><span className="fa fa-home mr-3"></span> About Me</p>
                             </li>
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                             <p onClick = {() => scrollHandler('education')}><span className="fa fa-book mr-3"></span> Education</p>
                             </li>
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('skills')}><span className="fa fa-cogs mr-3"></span> Skills</p>
                             </li>
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('experience')}><span className="fa fa-book mr-3"></span> Experience</p>
                             </li>
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('projects')}><span className="fa fa-briefcase mr-3"></span> Projects</p>
                               
                             </li>
                             
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('certificates')}><span className="fa fa-certificate mr-3"></span> Certificates</p>
                             </li>
-                            <li>
+                            <li style = {{cursor:"pointer"}}>
                               <p onClick = {() => scrollHandler('codingprofiles')}><span className="fa fa-code mr-3"></span> Coding Profiles</p>
                               
                             </li>
-                            <li>  
+                            <li style = {{cursor:"pointer"}}>  
                               <p onClick = {() => scrollHandler('contact')}><span className="fa fa-paper-plane mr-3"></span> Contact</p>
                               
                             </li>
