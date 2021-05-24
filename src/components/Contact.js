@@ -37,7 +37,7 @@ const Contact = ({resumeContact, resumeBasicInfo}) => {
               </div>
               <br/>
               <div className="title-container">
-              <a href = {resumeContact.resume} target="_blank" rel="noopener noreferrer" style = {{color:"black", textDecoration:"none"}}><h2 >Resume: </h2><i className="fa fa-download fa-2x text-grey424242" aria-hidden="true"></i></a>
+              <h2 >Resume: </h2><a href = {resumeContact.resume} target="_blank" rel="noopener noreferrer" style = {{ textDecoration:"none"}}><p></p><i className="fa fa-download fa-2x text-grey424242" aria-hidden="true"></i></a>
               </div>
               
               
