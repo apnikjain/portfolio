@@ -54,7 +54,7 @@ const About = ({resumeBasicInfo}) => {
                     }}
                   >
                     <br />
-                    <span className="wave">{resumeBasicInfo.description_header} :) </span>
+                    <span className="wave">{resumeBasicInfo.description_header}</span>
                     <br />
                     <br />
                     {resumeBasicInfo.description}
