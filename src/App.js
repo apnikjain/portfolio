@@ -11,6 +11,7 @@ import Certificates from "./components/Certificates"
 import CodingProfiles from "./components/CodingProfiles";
 import Contact from "./components/Contact";
 import Grid from "@material-ui/core/Grid";
+import { CircularProgress } from '@material-ui/core';
 import Drawer from '@material-ui/core/Drawer';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 // import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -86,7 +87,12 @@ const App = () =>{
   
 
 if(loading){
-  return <h1>loading...</h1>;
+  return (
+    <div style = {{display:'flex', justifyContent:'center', alignItems:"center", height:"100vh"}}>
+      <CircularProgress />
+    </div>
+
+  )
 }
   return (
     <Grid container >
@@ -96,7 +102,7 @@ if(loading){
                       <Drawer open={open} onClose={() => toggleDrawer()} variant="persistent"  anchor="left" className = "root">
                       <div className = "drawer" style = {{backgroundColor: "#1F1F1F"}}>
                
-                      <ChevronLeftIcon  className = "icon" onClick={() => toggleDrawer()} >Open</ChevronLeftIcon>
+                      <ChevronLeftIcon style = {{cursor:"pointer"}}  className = "icon" onClick={() => toggleDrawer()} >Open</ChevronLeftIcon>
                       
                       <div style={{position: "fixed",width: "270px"}}>
                       
@@ -190,7 +196,7 @@ if(loading){
                   <div>
                   <div className="github-corner" style = {{position:"fixed", zIndex:"10"}}>
                     {
-                      open?null:<MenuIcon className = "menu-icon" style = {{color:"black",margin: "1rem 1.5rem"}}  onClick={() => toggleDrawer()}>Open</MenuIcon>
+                      open?null:<MenuIcon className = "menu-icon" style = {{color:"black",margin: "1rem 1.5rem", cursor:"pointer"}}  onClick={() => toggleDrawer()}>Open</MenuIcon>
                     }
                     
                   </div>

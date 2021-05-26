@@ -14,9 +14,10 @@ const useStyles = makeStyles({
     cursor:"default"
   },
   root:{
-    maxWidth:"55rem",
+    maxWidth:"72rem",
     paddingTop:"2rem",
-    backgroundColor:"white !important"
+    backgroundColor:"white !important",
+    minWidth:"72rem"
   }
 });
 

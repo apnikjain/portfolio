@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "I'm Apnik Jain......",
+      "description_header": "I am an engineering student with sound judgment and strong interpersonal skills who is desirous of a technical position to utilize knowledge and build on skills.",
+      "description": "",
       "section_name": {
         "about": "About me",
         "projects": "KEY PROJECTS EXPERIENCE",
@@ -48,6 +48,34 @@
           },
           {
             "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Code-It-Out | Udemy | React and TypeScript",
+        "description": "It is an interactive browser-based coding environment. It's like a Jupyter Notebook, but for Javascript, with many additional features added in. Yes, this is what you are going to build in this course! You will solve incredible challenges around bundling and transpiling code directly in the browser. This is a task normally done by running Webpack and Babel at your terminal! You can execute user's code safely in the browser.",
+        "url": "https://apnikjain.github.io/Code-It-Out/",
+        "gitUrl":"https://github.com/apnikjain/Code-It-Out",
+        "technologies": [
+          {
+            "name": "React JS"
+          },
+          {
+            "name": "TypeScript"
+          }
+        ]
+      },
+      {
+        "title": "CRUD-APP",
+        "description": "It is an interactive Shopping App. Where users can buy and sell their own products.",
+        "url": "",
+        "gitUrl":"https://github.com/apnikjain/CRUD-App",
+        "technologies": [
+          {
+            "name": "React Native"
+          },
+          {
+            "name": "Firebase"
           }
         ]
       }
