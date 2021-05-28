@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/apnikjain-portfolio/static/css/main.79ef8fb8.chunk.css",
-    "main.js": "/apnikjain-portfolio/static/js/main.4dc2a76c.chunk.js",
-    "main.js.map": "/apnikjain-portfolio/static/js/main.4dc2a76c.chunk.js.map",
-    "runtime-main.js": "/apnikjain-portfolio/static/js/runtime-main.7c2c1447.js",
-    "runtime-main.js.map": "/apnikjain-portfolio/static/js/runtime-main.7c2c1447.js.map",
-    "static/css/2.e7de8650.chunk.css": "/apnikjain-portfolio/static/css/2.e7de8650.chunk.css",
-    "static/js/2.81901025.chunk.js": "/apnikjain-portfolio/static/js/2.81901025.chunk.js",
-    "static/js/2.81901025.chunk.js.map": "/apnikjain-portfolio/static/js/2.81901025.chunk.js.map",
-    "index.html": "/apnikjain-portfolio/index.html",
-    "precache-manifest.e6123912714ab04da7dae4591a5a5852.js": "/apnikjain-portfolio/precache-manifest.e6123912714ab04da7dae4591a5a5852.js",
-    "service-worker.js": "/apnikjain-portfolio/service-worker.js",
-    "static/css/2.e7de8650.chunk.css.map": "/apnikjain-portfolio/static/css/2.e7de8650.chunk.css.map",
-    "static/css/main.79ef8fb8.chunk.css.map": "/apnikjain-portfolio/static/css/main.79ef8fb8.chunk.css.map",
-    "static/js/2.81901025.chunk.js.LICENSE.txt": "/apnikjain-portfolio/static/js/2.81901025.chunk.js.LICENSE.txt"
+    "main.css": "/apnikjain.github.io/static/css/main.79ef8fb8.chunk.css",
+    "main.js": "/apnikjain.github.io/static/js/main.2c30515c.chunk.js",
+    "main.js.map": "/apnikjain.github.io/static/js/main.2c30515c.chunk.js.map",
+    "runtime-main.js": "/apnikjain.github.io/static/js/runtime-main.20319669.js",
+    "runtime-main.js.map": "/apnikjain.github.io/static/js/runtime-main.20319669.js.map",
+    "static/css/2.e7de8650.chunk.css": "/apnikjain.github.io/static/css/2.e7de8650.chunk.css",
+    "static/js/2.81901025.chunk.js": "/apnikjain.github.io/static/js/2.81901025.chunk.js",
+    "static/js/2.81901025.chunk.js.map": "/apnikjain.github.io/static/js/2.81901025.chunk.js.map",
+    "index.html": "/apnikjain.github.io/index.html",
+    "precache-manifest.637dd582f2069d7e37aedf016404537a.js": "/apnikjain.github.io/precache-manifest.637dd582f2069d7e37aedf016404537a.js",
+    "service-worker.js": "/apnikjain.github.io/service-worker.js",
+    "static/css/2.e7de8650.chunk.css.map": "/apnikjain.github.io/static/css/2.e7de8650.chunk.css.map",
+    "static/css/main.79ef8fb8.chunk.css.map": "/apnikjain.github.io/static/css/main.79ef8fb8.chunk.css.map",
+    "static/js/2.81901025.chunk.js.LICENSE.txt": "/apnikjain.github.io/static/js/2.81901025.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7c2c1447.js",
+    "static/js/runtime-main.20319669.js",
     "static/css/2.e7de8650.chunk.css",
     "static/js/2.81901025.chunk.js",
     "static/css/main.79ef8fb8.chunk.css",
-    "static/js/main.4dc2a76c.chunk.js"
+    "static/js/main.2c30515c.chunk.js"
   ]
 }
