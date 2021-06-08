@@ -66,6 +66,20 @@
         ]
       },
       {
+        "title": "Library-App",
+        "description": "It is a desktop application made using tkinter in python which allows you tostore details of all the books you want and can access at any point in time.",
+        "url": "",
+        "gitUrl":"https://github.com/apnikjain/Library-App",
+        "technologies": [
+          {
+            "name": "Python"
+          },
+          {
+            "name": "SQLite"
+          }
+        ]
+      },
+      {
         "title": "CRUD-APP",
         "description": "It is an interactive Shopping App. Where users can buy and sell their own products.",
         "url": "",
